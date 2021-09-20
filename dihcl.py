@@ -832,7 +832,7 @@ class SubPolicy(object):
             "translateY": np.linspace(0, 150 / 331, 10),
             "rotate": np.linspace(0, 30, 10),
             "color": np.linspace(0.0, 0.9, 10),
-            "posterize": np.round(np.linspace(8, 4, 10), 0).astype(np.int),
+            "posterize": np.round(np.linspace(8, 4, 10), 0).astype(int),
             "solarize": np.linspace(256, 0, 10),
             "contrast": np.linspace(0.0, 0.9, 10),
             "sharpness": np.linspace(0.0, 0.9, 10),
@@ -1656,7 +1656,7 @@ def accuracy(output, target, topk=(1,)):
 
     res = []
     for k in topk:
-        correct_k = correct[:k].view(-1).float().sum(0)
+        correct_k = correct[:k].reshape(-1).float().sum(0)
         res.append(correct_k.mul_(100.0 / batch_size))
 
     if len(res) == 1:
