@@ -548,3 +548,658 @@ new samples selected comparing to previous epoch: 8503
 Epoch: [137 | 300] LR: 0.001992, subset size k: 21523
 rand_prob min, max:  3.281897111982572e-07 0.0006385181833688403
 new samples selected comparing to previous epoch: 8510
+
+Epoch: [138 | 300] LR: 0.001259, subset size k: 21523
+rand_prob min, max:  3.2824365160042866e-07 0.0006382055815899806
+new samples selected comparing to previous epoch: 8470
+
+Epoch: [139 | 300] LR: 0.000718, subset size k: 21523
+rand_prob min, max:  3.282903311048355e-07 0.0006379283562220532
+new samples selected comparing to previous epoch: 8444
+
+Epoch: [140 | 300] LR: 0.000369, subset size k: 21523
+rand_prob min, max:  3.2835114776847464e-07 0.0006376116306190608
+new samples selected comparing to previous epoch: 8400
+Re-initialize model by Ema!
+
+Epoch: [141 | 300] LR: 0.000213, subset size k: 19371
+rand_prob min, max:  8.073281219121783e-07 0.0003440652003605179
+new samples selected comparing to previous epoch: 7807
+
+Epoch: [142 | 300] LR: 0.089955, subset size k: 19371
+rand_prob min, max:  8.073281219121783e-07 0.0003440652003605179
+new samples selected comparing to previous epoch: 9152
+
+Epoch: [143 | 300] LR: 0.089822, subset size k: 19371
+rand_prob min, max:  8.074016398039657e-07 0.0003439496553145489
+new samples selected comparing to previous epoch: 9236
+
+Epoch: [144 | 300] LR: 0.089599, subset size k: 19371
+rand_prob min, max:  8.074708959822319e-07 0.0003438296393686617
+new samples selected comparing to previous epoch: 9180
+
+Epoch: [145 | 300] LR: 0.089288, subset size k: 19371
+rand_prob min, max:  8.075383592982119e-07 0.0003437146276363973
+new samples selected comparing to previous epoch: 9250
+
+Epoch: [146 | 300] LR: 0.088889, subset size k: 19371
+rand_prob min, max:  8.076118619602148e-07 0.0003436016975501402
+new samples selected comparing to previous epoch: 9208
+
+Epoch: [147 | 300] LR: 0.088402, subset size k: 19371
+rand_prob min, max:  8.076811608166404e-07 0.00034348498113530616
+new samples selected comparing to previous epoch: 9128
+
+Epoch: [148 | 300] LR: 0.087830, subset size k: 19371
+rand_prob min, max:  8.077488051177398e-07 0.0003433568932845443
+new samples selected comparing to previous epoch: 9176
+
+Epoch: [149 | 300] LR: 0.087173, subset size k: 19371
+rand_prob min, max:  8.078230474330608e-07 0.0003432332535035364
+new samples selected comparing to previous epoch: 9173
+
+Epoch: [150 | 300] LR: 0.086432, subset size k: 19371
+rand_prob min, max:  8.078946560892774e-07 0.0003431101533846219
+new samples selected comparing to previous epoch: 9194
+
+Epoch: [151 | 300] LR: 0.085609, subset size k: 19371
+rand_prob min, max:  8.079661154378965e-07 0.00034298463154408386
+new samples selected comparing to previous epoch: 9211
+
+Epoch: [152 | 300] LR: 0.084706, subset size k: 19371
+rand_prob min, max:  8.080378430922507e-07 0.0003428556598623695
+new samples selected comparing to previous epoch: 9263
+
+Epoch: [153 | 300] LR: 0.083723, subset size k: 19371
+rand_prob min, max:  8.081090866991369e-07 0.0003427331823805526
+new samples selected comparing to previous epoch: 9189
+
+Epoch: [154 | 300] LR: 0.082664, subset size k: 19371
+rand_prob min, max:  8.081826870260428e-07 0.00034260982977705546
+new samples selected comparing to previous epoch: 9233
+
+Epoch: [155 | 300] LR: 0.081530, subset size k: 19371
+rand_prob min, max:  8.082569532894688e-07 0.0003424798350259299
+new samples selected comparing to previous epoch: 9141
+
+Epoch: [156 | 300] LR: 0.080324, subset size k: 19371
+rand_prob min, max:  8.083311038945527e-07 0.00034235697839079285
+new samples selected comparing to previous epoch: 9243
+
+Epoch: [157 | 300] LR: 0.079048, subset size k: 19371
+rand_prob min, max:  8.083978750372617e-07 0.0003422386570268368
+new samples selected comparing to previous epoch: 9202
+
+Epoch: [158 | 300] LR: 0.077704, subset size k: 19371
+rand_prob min, max:  8.084700757182577e-07 0.00034212651227747424
+new samples selected comparing to previous epoch: 9229
+
+Epoch: [159 | 300] LR: 0.076295, subset size k: 19371
+rand_prob min, max:  8.085477905853633e-07 0.000342005115884425
+new samples selected comparing to previous epoch: 9140
+
+Epoch: [160 | 300] LR: 0.074825, subset size k: 19371
+rand_prob min, max:  8.086316759827627e-07 0.00034188282656030144
+new samples selected comparing to previous epoch: 9196
+
+Epoch: [161 | 300] LR: 0.073295, subset size k: 19371
+rand_prob min, max:  8.087025934696399e-07 0.00034176529673649416
+new samples selected comparing to previous epoch: 9269
+
+Epoch: [162 | 300] LR: 0.071709, subset size k: 19371
+rand_prob min, max:  8.087716525567566e-07 0.0003416549026715998
+new samples selected comparing to previous epoch: 9218
+
+Epoch: [163 | 300] LR: 0.070070, subset size k: 19371
+rand_prob min, max:  8.088393226959407e-07 0.0003415459997857855
+new samples selected comparing to previous epoch: 9237
+
+Epoch: [164 | 300] LR: 0.068382, subset size k: 19371
+rand_prob min, max:  8.089079876848611e-07 0.00034141892599921005
+new samples selected comparing to previous epoch: 9180
+
+Epoch: [165 | 300] LR: 0.066647, subset size k: 19371
+rand_prob min, max:  8.089774320073391e-07 0.00034131071573632654
+new samples selected comparing to previous epoch: 9141
+
+Epoch: [166 | 300] LR: 0.064869, subset size k: 19371
+rand_prob min, max:  8.090483745684447e-07 0.0003411868804963195
+new samples selected comparing to previous epoch: 9150
+
+Epoch: [167 | 300] LR: 0.063052, subset size k: 19371
+rand_prob min, max:  8.091258075909118e-07 0.0003410663884581624
+new samples selected comparing to previous epoch: 9085
+
+Epoch: [168 | 300] LR: 0.061200, subset size k: 19371
+rand_prob min, max:  8.091993126589271e-07 0.0003409411611082089
+new samples selected comparing to previous epoch: 9110
+
+Epoch: [169 | 300] LR: 0.059315, subset size k: 19371
+rand_prob min, max:  8.092730575349552e-07 0.0003408166854419048
+new samples selected comparing to previous epoch: 9105
+
+Epoch: [170 | 300] LR: 0.057402, subset size k: 19371
+rand_prob min, max:  8.093458819518663e-07 0.00034069674318960494
+new samples selected comparing to previous epoch: 9090
+
+Epoch: [171 | 300] LR: 0.055465, subset size k: 19371
+rand_prob min, max:  8.094182875327603e-07 0.00034057428964806786
+new samples selected comparing to previous epoch: 9181
+
+Epoch: [172 | 300] LR: 0.053507, subset size k: 19371
+rand_prob min, max:  8.094873387691157e-07 0.0003404543151970101
+new samples selected comparing to previous epoch: 9170
+
+Epoch: [173 | 300] LR: 0.051532, subset size k: 19371
+rand_prob min, max:  8.095565026564987e-07 0.0003403281297525825
+new samples selected comparing to previous epoch: 9099
+
+Epoch: [174 | 300] LR: 0.049544, subset size k: 19371
+rand_prob min, max:  8.096343141991689e-07 0.0003402034956337581
+new samples selected comparing to previous epoch: 9154
+
+Epoch: [175 | 300] LR: 0.047548, subset size k: 19371
+rand_prob min, max:  8.097108742767399e-07 0.0003400798790865425
+new samples selected comparing to previous epoch: 9174
+
+Epoch: [176 | 300] LR: 0.045546, subset size k: 19371
+rand_prob min, max:  8.097836051785846e-07 0.0003399557045608984
+new samples selected comparing to previous epoch: 9186
+
+Epoch: [177 | 300] LR: 0.043544, subset size k: 19371
+rand_prob min, max:  8.098577610322308e-07 0.0003398324216739075
+new samples selected comparing to previous epoch: 9076
+
+Epoch: [178 | 300] LR: 0.041544, subset size k: 19371
+rand_prob min, max:  8.099297736752059e-07 0.00033970451971198354
+new samples selected comparing to previous epoch: 9095
+
+Epoch: [179 | 300] LR: 0.039552, subset size k: 19371
+rand_prob min, max:  8.100070524614181e-07 0.000339579211084759
+new samples selected comparing to previous epoch: 9124
+
+Epoch: [180 | 300] LR: 0.037571, subset size k: 19371
+rand_prob min, max:  8.100833629932418e-07 0.000339450579874563
+new samples selected comparing to previous epoch: 9224
+
+Epoch: [181 | 300] LR: 0.035605, subset size k: 19371
+rand_prob min, max:  8.101601799129332e-07 0.00033932566107558785
+new samples selected comparing to previous epoch: 9151
+
+Epoch: [182 | 300] LR: 0.033657, subset size k: 19371
+rand_prob min, max:  8.102336098600805e-07 0.00033920001719272305
+new samples selected comparing to previous epoch: 9130
+
+Epoch: [183 | 300] LR: 0.031732, subset size k: 19371
+rand_prob min, max:  8.103116365524261e-07 0.00033908435051857404
+new samples selected comparing to previous epoch: 9139
+
+Epoch: [184 | 300] LR: 0.029834, subset size k: 19371
+rand_prob min, max:  8.103841696721401e-07 0.00033896547764228325
+new samples selected comparing to previous epoch: 9162
+
+Epoch: [185 | 300] LR: 0.027966, subset size k: 19371
+rand_prob min, max:  8.104596066616648e-07 0.0003388452391442887
+new samples selected comparing to previous epoch: 9199
+
+Epoch: [186 | 300] LR: 0.026132, subset size k: 19371
+rand_prob min, max:  8.105395757416059e-07 0.0003387203320794745
+new samples selected comparing to previous epoch: 9235
+
+Epoch: [187 | 300] LR: 0.024336, subset size k: 19371
+rand_prob min, max:  8.106186094914317e-07 0.0003385994279641683
+new samples selected comparing to previous epoch: 9212
+
+Epoch: [188 | 300] LR: 0.022581, subset size k: 19371
+rand_prob min, max:  8.106943984107032e-07 0.00033848884994240694
+new samples selected comparing to previous epoch: 9195
+
+Epoch: [189 | 300] LR: 0.020870, subset size k: 19371
+rand_prob min, max:  8.107675019410928e-07 0.0003383651042711531
+new samples selected comparing to previous epoch: 9187
+
+Epoch: [190 | 300] LR: 0.019208, subset size k: 19371
+rand_prob min, max:  8.108424672434443e-07 0.0003382515971449074
+new samples selected comparing to previous epoch: 9243
+
+Epoch: [191 | 300] LR: 0.017597, subset size k: 19371
+rand_prob min, max:  8.109169322290464e-07 0.00033812796143691817
+new samples selected comparing to previous epoch: 9188
+
+Epoch: [192 | 300] LR: 0.016041, subset size k: 19371
+rand_prob min, max:  8.109944492003954e-07 0.00033801364326609975
+new samples selected comparing to previous epoch: 9163
+
+Epoch: [193 | 300] LR: 0.014543, subset size k: 19371
+rand_prob min, max:  8.11069910794904e-07 0.0003378933420251806
+new samples selected comparing to previous epoch: 9287
+
+Epoch: [194 | 300] LR: 0.013105, subset size k: 19371
+rand_prob min, max:  8.111444633855946e-07 0.0003377696488227124
+new samples selected comparing to previous epoch: 9171
+
+Epoch: [195 | 300] LR: 0.011731, subset size k: 19371
+rand_prob min, max:  8.11217535842442e-07 0.0003376473495738255
+new samples selected comparing to previous epoch: 9143
+
+Epoch: [196 | 300] LR: 0.010423, subset size k: 19371
+rand_prob min, max:  8.113024132542158e-07 0.0003375216241866118
+new samples selected comparing to previous epoch: 9184
+
+Epoch: [197 | 300] LR: 0.009184, subset size k: 19371
+rand_prob min, max:  8.113764180457673e-07 0.0003374051192309811
+new samples selected comparing to previous epoch: 9239
+
+Epoch: [198 | 300] LR: 0.008016, subset size k: 19371
+rand_prob min, max:  8.114504261404103e-07 0.00033728412178628123
+new samples selected comparing to previous epoch: 9130
+
+Epoch: [199 | 300] LR: 0.006922, subset size k: 19371
+rand_prob min, max:  8.115246250412738e-07 0.0003371711598232091
+new samples selected comparing to previous epoch: 9143
+
+Epoch: [200 | 300] LR: 0.005904, subset size k: 19371
+rand_prob min, max:  8.116038967987374e-07 0.00033705964252120655
+new samples selected comparing to previous epoch: 9210
+
+Epoch: [201 | 300] LR: 0.004964, subset size k: 19371
+rand_prob min, max:  8.116834009348488e-07 0.0003369362619037321
+new samples selected comparing to previous epoch: 9103
+
+Epoch: [202 | 300] LR: 0.004103, subset size k: 19371
+rand_prob min, max:  8.11755663081168e-07 0.0003368225278188129
+new samples selected comparing to previous epoch: 9127
+
+Epoch: [203 | 300] LR: 0.003324, subset size k: 19371
+rand_prob min, max:  8.118379281917775e-07 0.0003367003592368756
+new samples selected comparing to previous epoch: 9183
+
+Epoch: [204 | 300] LR: 0.002628, subset size k: 19371
+rand_prob min, max:  8.119152085853071e-07 0.0003365765451097766
+new samples selected comparing to previous epoch: 9182
+
+Epoch: [205 | 300] LR: 0.002016, subset size k: 19371
+rand_prob min, max:  8.119885722324586e-07 0.0003364531056835072
+new samples selected comparing to previous epoch: 9222
+
+Epoch: [206 | 300] LR: 0.001490, subset size k: 19371
+rand_prob min, max:  8.120619784435649e-07 0.00033633009133766543
+new samples selected comparing to previous epoch: 9140
+
+Epoch: [207 | 300] LR: 0.001050, subset size k: 19371
+rand_prob min, max:  8.121401789068752e-07 0.00033620804154973187
+new samples selected comparing to previous epoch: 9190
+
+Epoch: [208 | 300] LR: 0.000698, subset size k: 19371
+rand_prob min, max:  8.122136924909733e-07 0.0003360858675828106
+new samples selected comparing to previous epoch: 9231
+
+Epoch: [209 | 300] LR: 0.000435, subset size k: 19371
+rand_prob min, max:  8.122885956326078e-07 0.00033596300466033516
+new samples selected comparing to previous epoch: 9213
+
+Epoch: [210 | 300] LR: 0.000259, subset size k: 19371
+rand_prob min, max:  8.123613188902585e-07 0.00033585138111159483
+new samples selected comparing to previous epoch: 9181
+Re-initialize model by Ema!
+
+Epoch: [211 | 300] LR: 0.000173, subset size k: 17433
+rand_prob min, max:  1.631669361289888e-06 0.0002021243739502507
+new samples selected comparing to previous epoch: 8428
+
+Epoch: [212 | 300] LR: 0.080976, subset size k: 17433
+rand_prob min, max:  1.631669361289888e-06 0.0002021243739502507
+new samples selected comparing to previous epoch: 9491
+
+Epoch: [213 | 300] LR: 0.080903, subset size k: 17433
+rand_prob min, max:  1.6317497224598645e-06 0.0002020702098291366
+new samples selected comparing to previous epoch: 9549
+
+Epoch: [214 | 300] LR: 0.080782, subset size k: 17433
+rand_prob min, max:  1.6318352130246886e-06 0.00020201790213756943
+new samples selected comparing to previous epoch: 9688
+
+Epoch: [215 | 300] LR: 0.080612, subset size k: 17433
+rand_prob min, max:  1.6319193076102382e-06 0.00020195995172512114
+new samples selected comparing to previous epoch: 9526
+
+Epoch: [216 | 300] LR: 0.080395, subset size k: 17433
+rand_prob min, max:  1.632007520111377e-06 0.00020191150567952553
+new samples selected comparing to previous epoch: 9603
+
+Epoch: [217 | 300] LR: 0.080129, subset size k: 17433
+rand_prob min, max:  1.6320873310039926e-06 0.0002018557568263661
+new samples selected comparing to previous epoch: 9592
+
+Epoch: [218 | 300] LR: 0.079816, subset size k: 17433
+rand_prob min, max:  1.6321709282708956e-06 0.00020179659493411105
+new samples selected comparing to previous epoch: 9592
+
+Epoch: [219 | 300] LR: 0.079456, subset size k: 17433
+rand_prob min, max:  1.6322614925350357e-06 0.0002017638213869076
+new samples selected comparing to previous epoch: 9582
+
+Epoch: [220 | 300] LR: 0.079050, subset size k: 17433
+rand_prob min, max:  1.6323450384092403e-06 0.00020172734441597397
+new samples selected comparing to previous epoch: 9555
+
+Epoch: [221 | 300] LR: 0.078597, subset size k: 17433
+rand_prob min, max:  1.6324354498028928e-06 0.00020166959358574002
+new samples selected comparing to previous epoch: 9562
+
+Epoch: [222 | 300] LR: 0.078098, subset size k: 17433
+rand_prob min, max:  1.6325294242791984e-06 0.00020160852854875862
+new samples selected comparing to previous epoch: 9543
+
+Epoch: [223 | 300] LR: 0.077554, subset size k: 17433
+rand_prob min, max:  1.6326151568228575e-06 0.00020155099933996464
+new samples selected comparing to previous epoch: 9549
+
+Epoch: [224 | 300] LR: 0.076966, subset size k: 17433
+rand_prob min, max:  1.6327032835626975e-06 0.0002014900657796548
+new samples selected comparing to previous epoch: 9548
+
+Epoch: [225 | 300] LR: 0.076335, subset size k: 17433
+rand_prob min, max:  1.6327963726162538e-06 0.0002014300793223873
+new samples selected comparing to previous epoch: 9591
+
+Epoch: [226 | 300] LR: 0.075660, subset size k: 17433
+rand_prob min, max:  1.632886042589213e-06 0.0002013695958592489
+new samples selected comparing to previous epoch: 9550
+
+Epoch: [227 | 300] LR: 0.074943, subset size k: 17433
+rand_prob min, max:  1.632971836503112e-06 0.00020132164535177565
+new samples selected comparing to previous epoch: 9583
+
+Epoch: [228 | 300] LR: 0.074185, subset size k: 17433
+rand_prob min, max:  1.6330613004155206e-06 0.00020127193188702145
+new samples selected comparing to previous epoch: 9527
+
+Epoch: [229 | 300] LR: 0.073386, subset size k: 17433
+rand_prob min, max:  1.633158461742956e-06 0.00020121265416577186
+new samples selected comparing to previous epoch: 9551
+
+Epoch: [230 | 300] LR: 0.072548, subset size k: 17433
+rand_prob min, max:  1.6332475251534735e-06 0.0002011546418846704
+new samples selected comparing to previous epoch: 9581
+
+Epoch: [231 | 300] LR: 0.071672, subset size k: 17433
+rand_prob min, max:  1.633345957634176e-06 0.00020109534697034282
+new samples selected comparing to previous epoch: 9544
+
+Epoch: [232 | 300] LR: 0.070759, subset size k: 17433
+rand_prob min, max:  1.633442353032661e-06 0.00020103509505829976
+new samples selected comparing to previous epoch: 9599
+
+Epoch: [233 | 300] LR: 0.069809, subset size k: 17433
+rand_prob min, max:  1.6335296683857487e-06 0.00020097796098075834
+new samples selected comparing to previous epoch: 9547
+
+Epoch: [234 | 300] LR: 0.068824, subset size k: 17433
+rand_prob min, max:  1.6336159596397287e-06 0.0002009225884328808
+new samples selected comparing to previous epoch: 9520
+
+Epoch: [235 | 300] LR: 0.067805, subset size k: 17433
+rand_prob min, max:  1.6336960397604571e-06 0.00020087526803841426
+new samples selected comparing to previous epoch: 9596
+
+Epoch: [236 | 300] LR: 0.066753, subset size k: 17433
+rand_prob min, max:  1.6337895436304905e-06 0.00020082458022315487
+new samples selected comparing to previous epoch: 9563
+
+Epoch: [237 | 300] LR: 0.065670, subset size k: 17433
+rand_prob min, max:  1.6338852889457764e-06 0.0002007647257680043
+new samples selected comparing to previous epoch: 9561
+
+Epoch: [238 | 300] LR: 0.064557, subset size k: 17433
+rand_prob min, max:  1.6339677632001962e-06 0.00020070795731805374
+new samples selected comparing to previous epoch: 9523
+
+Epoch: [239 | 300] LR: 0.063415, subset size k: 17433
+rand_prob min, max:  1.634059011609926e-06 0.00020066943655152822
+new samples selected comparing to previous epoch: 9645
+
+Epoch: [240 | 300] LR: 0.062245, subset size k: 17433
+rand_prob min, max:  1.6341463450159721e-06 0.00020063384115484638
+new samples selected comparing to previous epoch: 9575
+
+Epoch: [241 | 300] LR: 0.061050, subset size k: 17433
+rand_prob min, max:  1.6342406468977383e-06 0.00020057371411073637
+new samples selected comparing to previous epoch: 9552
+
+Epoch: [242 | 300] LR: 0.059830, subset size k: 17433
+rand_prob min, max:  1.6343258102516406e-06 0.00020053042235858922
+new samples selected comparing to previous epoch: 9571
+
+Epoch: [243 | 300] LR: 0.058587, subset size k: 17433
+rand_prob min, max:  1.6344118544788698e-06 0.00020047487328075453
+new samples selected comparing to previous epoch: 9564
+
+Epoch: [244 | 300] LR: 0.057322, subset size k: 17433
+rand_prob min, max:  1.6344990320064083e-06 0.00020042751898854727
+new samples selected comparing to previous epoch: 9549
+
+Epoch: [245 | 300] LR: 0.056037, subset size k: 17433
+rand_prob min, max:  1.6345871260537983e-06 0.0002003729004390906
+new samples selected comparing to previous epoch: 9540
+
+Epoch: [246 | 300] LR: 0.054733, subset size k: 17433
+rand_prob min, max:  1.634682123315381e-06 0.00020031316581002538
+new samples selected comparing to previous epoch: 9628
+
+Epoch: [247 | 300] LR: 0.053413, subset size k: 17433
+rand_prob min, max:  1.6347795508676992e-06 0.0002002807291033164
+new samples selected comparing to previous epoch: 9554
+
+Epoch: [248 | 300] LR: 0.052077, subset size k: 17433
+rand_prob min, max:  1.6348721925439533e-06 0.00020024884722146116
+new samples selected comparing to previous epoch: 9602
+
+Epoch: [249 | 300] LR: 0.050727, subset size k: 17433
+rand_prob min, max:  1.6349614318690105e-06 0.00020019028476712657
+new samples selected comparing to previous epoch: 9615
+
+Epoch: [250 | 300] LR: 0.049365, subset size k: 17433
+rand_prob min, max:  1.6350572148531553e-06 0.00020013115634670656
+new samples selected comparing to previous epoch: 9587
+
+Epoch: [251 | 300] LR: 0.047992, subset size k: 17433
+rand_prob min, max:  1.6351475133815294e-06 0.00020007869203425742
+new samples selected comparing to previous epoch: 9604
+
+Epoch: [252 | 300] LR: 0.046611, subset size k: 17433
+rand_prob min, max:  1.6352370153316415e-06 0.00020002827607569582
+new samples selected comparing to previous epoch: 9561
+
+Epoch: [253 | 300] LR: 0.045222, subset size k: 17433
+rand_prob min, max:  1.635337587247048e-06 0.00019996864585537276
+new samples selected comparing to previous epoch: 9558
+
+Epoch: [254 | 300] LR: 0.043828, subset size k: 17433
+rand_prob min, max:  1.6354329606343821e-06 0.0001999147468715035
+new samples selected comparing to previous epoch: 9512
+
+Epoch: [255 | 300] LR: 0.042430, subset size k: 17433
+rand_prob min, max:  1.6355173428233443e-06 0.00019986045929989226
+new samples selected comparing to previous epoch: 9471
+
+Epoch: [256 | 300] LR: 0.041029, subset size k: 17433
+rand_prob min, max:  1.6356118358181118e-06 0.00019981073400651255
+new samples selected comparing to previous epoch: 9536
+
+Epoch: [257 | 300] LR: 0.039628, subset size k: 17433
+rand_prob min, max:  1.635708174660912e-06 0.0001997621149021885
+new samples selected comparing to previous epoch: 9524
+
+Epoch: [258 | 300] LR: 0.038228, subset size k: 17433
+rand_prob min, max:  1.6357927655043185e-06 0.00019970564077754962
+new samples selected comparing to previous epoch: 9604
+
+Epoch: [259 | 300] LR: 0.036831, subset size k: 17433
+rand_prob min, max:  1.6358845024246949e-06 0.00019964744958688108
+new samples selected comparing to previous epoch: 9579
+
+Epoch: [260 | 300] LR: 0.035438, subset size k: 17433
+rand_prob min, max:  1.6359710107893392e-06 0.00019959225075746824
+new samples selected comparing to previous epoch: 9623
+
+Epoch: [261 | 300] LR: 0.034052, subset size k: 17433
+rand_prob min, max:  1.6360643189704042e-06 0.00019953556349628046
+new samples selected comparing to previous epoch: 9519
+
+Epoch: [262 | 300] LR: 0.032673, subset size k: 17433
+rand_prob min, max:  1.6361523407417334e-06 0.00019947973279390446
+new samples selected comparing to previous epoch: 9466
+
+Epoch: [263 | 300] LR: 0.031304, subset size k: 17433
+rand_prob min, max:  1.636240651791735e-06 0.0001994228264891932
+new samples selected comparing to previous epoch: 9548
+
+Epoch: [264 | 300] LR: 0.029946, subset size k: 17433
+rand_prob min, max:  1.636334893875408e-06 0.0001993644572591353
+new samples selected comparing to previous epoch: 9627
+
+Epoch: [265 | 300] LR: 0.028601, subset size k: 17433
+rand_prob min, max:  1.636431361243543e-06 0.0001993128929727728
+new samples selected comparing to previous epoch: 9541
+
+Epoch: [266 | 300] LR: 0.027270, subset size k: 17433
+rand_prob min, max:  1.6365222920051628e-06 0.0001992546286878848
+new samples selected comparing to previous epoch: 9509
+
+Epoch: [267 | 300] LR: 0.025955, subset size k: 17433
+rand_prob min, max:  1.6366155817342122e-06 0.0001992053769543282
+new samples selected comparing to previous epoch: 9472
+
+Epoch: [268 | 300] LR: 0.024658, subset size k: 17433
+rand_prob min, max:  1.6366935784529356e-06 0.0001991496963314807
+new samples selected comparing to previous epoch: 9505
+
+Epoch: [269 | 300] LR: 0.023379, subset size k: 17433
+rand_prob min, max:  1.636780904371663e-06 0.00019910475432122852
+new samples selected comparing to previous epoch: 9636
+
+Epoch: [270 | 300] LR: 0.022122, subset size k: 17433
+rand_prob min, max:  1.6368663350514646e-06 0.00019905443210266582
+new samples selected comparing to previous epoch: 9552
+
+Epoch: [271 | 300] LR: 0.020886, subset size k: 17433
+rand_prob min, max:  1.636954554693228e-06 0.00019900035648437637
+new samples selected comparing to previous epoch: 9549
+
+Epoch: [272 | 300] LR: 0.019674, subset size k: 17433
+rand_prob min, max:  1.6370524574970743e-06 0.00019895297787945253
+new samples selected comparing to previous epoch: 9604
+
+Epoch: [273 | 300] LR: 0.018487, subset size k: 17433
+rand_prob min, max:  1.6371453998550976e-06 0.0001989061407475803
+new samples selected comparing to previous epoch: 9599
+
+Epoch: [274 | 300] LR: 0.017327, subset size k: 17433
+rand_prob min, max:  1.6372368222168668e-06 0.0001988497797537975
+new samples selected comparing to previous epoch: 9638
+
+Epoch: [275 | 300] LR: 0.016194, subset size k: 17433
+rand_prob min, max:  1.637327096609705e-06 0.00019879218040611983
+new samples selected comparing to previous epoch: 9658
+
+Epoch: [276 | 300] LR: 0.015091, subset size k: 17433
+rand_prob min, max:  1.6374177422579319e-06 0.00019875445301170534
+new samples selected comparing to previous epoch: 9603
+
+Epoch: [277 | 300] LR: 0.014019, subset size k: 17433
+rand_prob min, max:  1.6375018310244153e-06 0.00019872000996795576
+new samples selected comparing to previous epoch: 9479
+
+Epoch: [278 | 300] LR: 0.012978, subset size k: 17433
+rand_prob min, max:  1.6375886356639842e-06 0.00019867434118864488
+new samples selected comparing to previous epoch: 9562
+
+Epoch: [279 | 300] LR: 0.011970, subset size k: 17433
+rand_prob min, max:  1.637675671170777e-06 0.00019863177100497458
+new samples selected comparing to previous epoch: 9623
+
+Epoch: [280 | 300] LR: 0.010997, subset size k: 17433
+rand_prob min, max:  1.6377674297393733e-06 0.00019858270312784194
+new samples selected comparing to previous epoch: 9592
+
+Epoch: [281 | 300] LR: 0.010059, subset size k: 17433
+rand_prob min, max:  1.6378608407001916e-06 0.00019853393219071254
+new samples selected comparing to previous epoch: 9565
+
+Epoch: [282 | 300] LR: 0.009158, subset size k: 17433
+rand_prob min, max:  1.6379554584817492e-06 0.00019848548966049987
+new samples selected comparing to previous epoch: 9584
+
+Epoch: [283 | 300] LR: 0.008295, subset size k: 17433
+rand_prob min, max:  1.6380373028139983e-06 0.00019843320652420646
+new samples selected comparing to previous epoch: 9616
+
+Epoch: [284 | 300] LR: 0.007470, subset size k: 17433
+rand_prob min, max:  1.6381286049475781e-06 0.00019837970934789967
+new samples selected comparing to previous epoch: 9443
+
+Epoch: [285 | 300] LR: 0.006685, subset size k: 17433
+rand_prob min, max:  1.6382135682500203e-06 0.00019833386261488433
+new samples selected comparing to previous epoch: 9564
+
+Epoch: [286 | 300] LR: 0.005941, subset size k: 17433
+rand_prob min, max:  1.6383034087349454e-06 0.00019828516364227074
+new samples selected comparing to previous epoch: 9589
+
+Epoch: [287 | 300] LR: 0.005238, subset size k: 17433
+rand_prob min, max:  1.6383849426696465e-06 0.00019824068615291695
+new samples selected comparing to previous epoch: 9569
+
+Epoch: [288 | 300] LR: 0.004578, subset size k: 17433
+rand_prob min, max:  1.638470419850464e-06 0.00019819282171470892
+new samples selected comparing to previous epoch: 9530
+
+Epoch: [289 | 300] LR: 0.003961, subset size k: 17433
+rand_prob min, max:  1.6385661633244948e-06 0.000198141933717564
+new samples selected comparing to previous epoch: 9630
+
+Epoch: [290 | 300] LR: 0.003388, subset size k: 17433
+rand_prob min, max:  1.638658091587287e-06 0.00019808775323268153
+new samples selected comparing to previous epoch: 9493
+
+Epoch: [291 | 300] LR: 0.002859, subset size k: 17433
+rand_prob min, max:  1.6387510537892535e-06 0.0001980323055405804
+new samples selected comparing to previous epoch: 9585
+
+Epoch: [292 | 300] LR: 0.002376, subset size k: 17433
+rand_prob min, max:  1.6388378413603874e-06 0.00019798279504227624
+new samples selected comparing to previous epoch: 9566
+
+Epoch: [293 | 300] LR: 0.001939, subset size k: 17433
+rand_prob min, max:  1.6389203420495726e-06 0.00019793391192820723
+new samples selected comparing to previous epoch: 9540
+
+Epoch: [294 | 300] LR: 0.001548, subset size k: 17433
+rand_prob min, max:  1.6390109216213622e-06 0.00019788597716900564
+new samples selected comparing to previous epoch: 9564
+
+Epoch: [295 | 300] LR: 0.001204, subset size k: 17433
+rand_prob min, max:  1.6390970319024234e-06 0.00019783333810923586
+new samples selected comparing to previous epoch: 9637
+
+Epoch: [296 | 300] LR: 0.000907, subset size k: 17433
+rand_prob min, max:  1.6391780761159546e-06 0.0001977841061517014
+new samples selected comparing to previous epoch: 9533
+
+Epoch: [297 | 300] LR: 0.000657, subset size k: 17433
+rand_prob min, max:  1.6392650287147712e-06 0.0001977321070327901
+new samples selected comparing to previous epoch: 9585
+
+Epoch: [298 | 300] LR: 0.000456, subset size k: 17433
+rand_prob min, max:  1.6393524248819876e-06 0.00019768188304483046
+new samples selected comparing to previous epoch: 9576
+
+Epoch: [299 | 300] LR: 0.000303, subset size k: 17433
+rand_prob min, max:  1.6394449291938828e-06 0.0001976263250848427
+new samples selected comparing to previous epoch: 9706
+
+Epoch: [300 | 300] LR: 0.000198, subset size k: 17433
+rand_prob min, max:  1.6395286611305555e-06 0.00019757092209242606
+new samples selected comparing to previous epoch: 9609
+Best acc: 96.16000007324219
