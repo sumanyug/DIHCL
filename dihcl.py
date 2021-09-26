@@ -35,7 +35,6 @@ import torchvision.datasets as datasets
 # model_names = sorted(name for name in models.__dict__
 #     if not name.startswith("__")
 #     and callable(models.__dict__[name]))
-
 parser = argparse.ArgumentParser(description='Curriculum Learning by Dynamic Instance Hardness (DIHCL)')
 parser.add_argument('-d', '--dataset', type=str, default='CIFAR10')
     # choices=['CIFAR10', 'CIFAR100', 'MNIST', 'FashionMNIST', 'SVHN', 'STL10'])
