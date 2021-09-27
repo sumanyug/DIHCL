@@ -1,3 +1,6 @@
+DBG = False
+Fixed_Subset = True
+
 # Copyright 2020-present, Tianyi Zhou.
 # All rights reserved.
 # This source code is licensed under the license found in the
@@ -31,27 +34,43 @@ import torchvision.transforms as transforms
 import torchvision.datasets as datasets
 
 
-# import models.cifar as models
-# model_names = sorted(name for name in models.__dict__
-#     if not name.startswith("__")
-#     and callable(models.__dict__[name]))
+
 parser = argparse.ArgumentParser(description='Curriculum Learning by Dynamic Instance Hardness (DIHCL)')
-parser.add_argument('-d', '--dataset', type=str, default='CIFAR10')
+if DBG:
+    parser.add_argument('-d', '--dataset', type=str, default='cifar10-python')
+else:
+    parser.add_argument('-d', '--dataset', type=str, default='cifar10')
     # choices=['CIFAR10', 'CIFAR100', 'MNIST', 'FashionMNIST', 'SVHN', 'STL10'])
-parser.add_argument('-spath', '--save_path', default='result', type=str, metavar='PATH',
-                    help='path to save results')
-parser.add_argument('-dpath', '--data_path', default='../data', type=str, metavar='PATH',
-                    help='path to dataset directory')
-parser.add_argument('--trialID', default='00/', type=str, metavar='PATH',
-                    help='path to specific trial')
+if DBG:
+    parser.add_argument('-spath', '--save_path', default='./result', type=str, metavar='PATH',
+                        help='path to save results')
+    parser.add_argument('-dpath', '--data_path', default='../input', type=str, metavar='PATH',
+                        help='path to dataset directory')
+    parser.add_argument('--trialID', default='00_DBG/', type=str, metavar='PATH',
+                        help='path to specific trial')
+else:
+    parser.add_argument('-spath', '--save_path', default='result', type=str, metavar='PATH',
+                        help='path to save results')
+    parser.add_argument('-dpath', '--data_path', default='../data', type=str, metavar='PATH',
+                        help='path to dataset directory')
+    parser.add_argument('--trialID', default='00/', type=str, metavar='PATH',
+                        help='path to specific trial')
 
 # Optimization parameters
-parser.add_argument('--epochs', default=300, type=int, metavar='N',
-                    help='total epochs to run')
-parser.add_argument('--schedule', type=int, nargs='+', default=[0, 5, 10, 15, 20, 30, 40, 60, 90, 140, 210, 300],
-                        help='splitting points (epoch number) for multiple episodes of training')
-parser.add_argument('--selfsupervise_cut_epoch', default=200, type=int,
-                    help='epoch to stop self-supervision and centrality max')
+if DBG:
+    parser.add_argument('--epochs', default=15, type=int, metavar='N',
+                        help='total epochs to run')
+    parser.add_argument('--schedule', type=int, nargs='+', default=[0, 5, 10, 15],
+                            help='splitting points (epoch number) for multiple episodes of training')
+    parser.add_argument('--selfsupervise_cut_epoch', default=10, type=int,
+                        help='epoch to stop self-supervision and centrality max')
+else:
+    parser.add_argument('--epochs', default=300, type=int, metavar='N',
+                        help='total epochs to run')
+    parser.add_argument('--schedule', type=int, nargs='+', default=[0, 5, 10, 15, 20, 30, 40, 60, 90, 140, 210, 300],
+                            help='splitting points (epoch number) for multiple episodes of training')
+    parser.add_argument('--selfsupervise_cut_epoch', default=200, type=int,
+                        help='epoch to stop self-supervision and centrality max')
 parser.add_argument('--explore_cut_episode', default=5, type=int,
                     help='episode to stop update features, centrality, and increasing initial learning rate')
 parser.add_argument('--train-batch', default=128, type=int, metavar='N',
@@ -90,22 +109,37 @@ parser.add_argument('--manualSeed', type=int, help='manual seed')
 parser.add_argument('--random_state', default=32, type=int, help='random state/seed')
 
 # DIHCL parameters
-parser.add_argument('--k', default=1.0, type=float, 
-                    help='(initial) ratio for subset selected')
-parser.add_argument('--dk', default=0.1, type=float, 
-                    help='increase rate of k')
-parser.add_argument('--mk', default=0.3, type=float,
-                    help='maximum/minimum of k')
+if Fixed_Subset:
+    parser.add_argument('--k', default=0.5, type=float, 
+                        help='(initial) ratio for subset selected')
+    parser.add_argument('--dk', default=0.0, type=float, 
+                        help='increase rate of k')
+    parser.add_argument('--mk', default=1.0, type=float,
+                        help='maximum/minimum of k')
+    parser.add_argument('--select_ratio', default=0.5, type=float,
+                        help='(initial) ratio of further selection by centrality (when use_centrality=True)')
+    parser.add_argument('--select_ratio_rate', default=1.1, type=float,
+                        help='multiplication factor applied to select_ratio for each episode')
+    parser.add_argument('--tmpt', default=10., type=float,
+                        help='1/temperature used in updating EXP3 probability')
+    parser.add_argument('--tmpt_rate', default=0.8, type=float,
+                        help='rate of temperature')
 
-parser.add_argument('--select_ratio', default=0.5, type=float,
-                    help='(initial) ratio of further selection by centrality (when use_centrality=True)')
-parser.add_argument('--select_ratio_rate', default=1.1, type=float,
-                    help='multiplication factor applied to select_ratio for each episode')
-
-parser.add_argument('--tmpt', default=20., type=float,
-                    help='1/temperature used in updating EXP3 probability')
-parser.add_argument('--tmpt_rate', default=0.8, type=float,
-                    help='rate of temperature')
+else:
+    parser.add_argument('--k', default=1.0, type=float, 
+                        help='(initial) ratio for subset selected')
+    parser.add_argument('--dk', default=0.1, type=float, 
+                        help='increase rate of k')
+    parser.add_argument('--mk', default=0.3, type=float,
+                        help='maximum/minimum of k')
+    parser.add_argument('--select_ratio', default=0.5, type=float,
+                        help='(initial) ratio of further selection by centrality (when use_centrality=True)')
+    parser.add_argument('--select_ratio_rate', default=1.1, type=float,
+                        help='multiplication factor applied to select_ratio for each episode')
+    parser.add_argument('--tmpt', default=20., type=float,
+                        help='1/temperature used in updating EXP3 probability')
+    parser.add_argument('--tmpt_rate', default=0.8, type=float,
+                        help='rate of temperature')
 
 parser.add_argument('--mod', default=0.05, type=float,
                     help='(initial) weight of DIH (when use_centrality=True, since the weight for centrality is 1 - mod)')
@@ -126,10 +160,17 @@ parser.add_argument('--contrastive_rate', default=0.9, type=float,
                     help='multiplcation factor applied to the contrastive weight every episode')
 
 # choices of different settings
-parser.add_argument('--use_curriculum', action='store_true',
-                    help='if using curriculum learning or not')
-parser.add_argument('--use_mean_teacher', action='store_true',
-                    help='maintain a time moving average of the model (ensemble over time) as a teacher for consistency regularization')
+if DBG:
+    parser.add_argument('--use_curriculum', action='store_true', default=True,
+                        help='if using curriculum learning or not')
+    parser.add_argument('--use_mean_teacher', action='store_true', default=True,
+                        help='maintain a time moving average of the model (ensemble over time) as a teacher for consistency regularization')
+else:
+    parser.add_argument('--use_curriculum', action='store_true',
+                        help='if using curriculum learning or not')
+    parser.add_argument('--use_mean_teacher', action='store_true',
+                        help='maintain a time moving average of the model (ensemble over time) as a teacher for consistency regularization')
+
 parser.add_argument('--bandits_alg', default='EXP3', type=str,
                     help='which bandits alg to use: EXP3, UCB, TS (Thampson sampling)')
 parser.add_argument('--use_loss_as_feedback', action='store_true',
@@ -151,7 +192,7 @@ parser.add_argument('--num_aug', default=0, type=int,
 parser.add_argument('--save_dynamics', action='store_true',
                     help='save training dynamics (require large memory)')
 
-args = parser.parse_args()
+args = parser.parse_args("")
 state = {k: v for k, v in args._get_kwargs()}
 
 # Use CUDA
@@ -171,6 +212,7 @@ if use_cuda:
 # name a folder by the trialID to store all the results
 folder = args.trialID
 
+
 def main():
 
     global best_acc
@@ -184,7 +226,7 @@ def main():
     # prepare datasets to train
     print('==> Preparing dataset %s' % args.dataset)
 
-    if args.dataset == 'cifar10':
+    if args.dataset == 'cifar10' or args.dataset == 'cifar10-python':
         dataloader = datasets.CIFAR10
         num_classes = 10
         trans_mean = (0.4914, 0.4822, 0.4465)
@@ -316,6 +358,7 @@ def main():
             trainset_aug = dataloader(root=args.data_path, split='train', download=False, transform=transform_train)
         n_train = len(trainset.labels)
     else:
+        
         trainset = dataloader(root=args.data_path+'/'+args.dataset, train=True, download=True, transform=transform_train2)
         testset = dataloader(root=args.data_path+'/'+args.dataset, train=False, download=False, transform=transform_test)
         trainset0 = dataloader(root=args.data_path+'/'+args.dataset, train=True, download=True, transform=transform_test)
@@ -338,6 +381,17 @@ def main():
         else:
             target_copy = torch.LongTensor(target_copy)
 
+    if DBG and not args.use_noisylabel:
+        assert(args.dataset=='cifar10-python')
+        dbg_train_indexes = list(range(0,len(trainset),len(trainset)//(args.train_batch*10)))
+        dbg_test_indexes = list(range(0,len(testset),len(testset)//(args.test_batch*2)))
+        trainset = torch.utils.data.Subset(trainset, dbg_train_indexes)
+        testset = torch.utils.data.Subset(testset, dbg_test_indexes)
+        trainset0 = torch.utils.data.Subset(trainset0, dbg_train_indexes)
+        if args.num_aug > 0:
+            testset_aug = torch.utils.data.Subset(testset_aug, dbg_test_indexes)
+            trainset_aug = torch.utils.data.Subset(trainset_aug, dbg_train_indexes)
+        n_train = len(dbg_train_indexes)
     trainloader_val = data.DataLoader(trainset0, batch_size=args.test_batch, shuffle=False, num_workers=args.workers)
     testloader = data.DataLoader(testset, batch_size=args.test_batch, shuffle=False, num_workers=args.workers)
     if args.num_aug > 0:
@@ -346,6 +400,7 @@ def main():
     else:
         testloader_aug = None
         trainloader_aug = None
+
 
     # Initialize Neural Nets Model
     print("==> creating model '{}'".format(args.arch))
@@ -369,7 +424,10 @@ def main():
             init_as_ema(ema_model, model)
         else:
             ema_model = None
-    print('    Total params: %.2fM' % (sum(p.numel() for p in model.parameters())/1000000.0))
+    if DBG:
+        print('    Total params: %.2fK' % (sum(p.numel() for p in model.parameters())/1000.0))
+    else:
+        print('    Total params: %.2fM' % (sum(p.numel() for p in model.parameters())/1000000.0))
     optimizer = optim.SGD(model.parameters(), lr=args.lr, momentum=args.momentum, weight_decay=args.weight_decay, nesterov=True)
 
     cudnn.benchmark = True
@@ -437,7 +495,7 @@ def main():
             if args.use_curriculum:
 
                 # update k0 (random subsampling budget)
-                args.k = max([args.k * (1.0-args.dk), args.mk])
+                args.k = max([args.k * (1.0-args.dk), args.k*args.mk])
                 args.select_ratio = min(args.select_ratio_rate * args.select_ratio, 1.0)
                 k0 = int(np.floor(args.k * n_train))
                 if args.use_centrality:
@@ -1062,12 +1120,64 @@ class WideResNet(nn.Module):
         x = self.fc(outfea)
         return outfea, x
 
-def wrn(**kwargs):
-    """
-    Constructs a Wide Residual Networks.
-    """
-    model = WideResNet(**kwargs)
-    return model
+class SimpleCovNet(nn.Module):
+    def __init__(self, input_shape, num_classes, bias=True,**kwargs):
+        super(SimpleCovNet, self).__init__()
+        nChannels = [8,16,32]
+        # 1st conv before any network block
+        self.conv1 = nn.Conv2d(input_shape[1], nChannels[0], kernel_size=2, stride=2,
+                               padding=0, bias=False)
+        self.conv2 = nn.Conv2d(nChannels[0],nChannels[1], kernel_size=2, stride=2,padding=0)
+        self.conv3 = nn.Conv2d(nChannels[1],nChannels[2], kernel_size=2, stride=2,padding=0)
+        self.bn1 = nn.BatchNorm2d(nChannels[0])
+        self.bn2 = nn.BatchNorm2d(nChannels[1])
+        self.bn3 = nn.BatchNorm2d(nChannels[2])
+        self.relu = nn.LeakyReLU(inplace=True)
+        self.flatten = Flatten(nChannels[-1])
+
+        # compute conv feature size
+        with torch.no_grad():
+            self.feature_size = self._forward_conv(
+                torch.zeros(*input_shape)).view(-1).shape[0]
+
+        self.fc = nn.Linear(self.feature_size, num_classes, bias = bias)
+        self.nChannels = nChannels[-1]
+
+        for m in self.modules():
+            if isinstance(m, nn.Conv2d):
+                n = m.kernel_size[0] * m.kernel_size[1] * m.out_channels
+                m.weight.data.normal_(0, math.sqrt(2. / n))
+            elif isinstance(m, nn.BatchNorm2d):
+                m.weight.data.fill_(1)
+                m.bias.data.zero_()
+            elif isinstance(m, nn.Linear):
+                if bias:
+                    m.bias.data.zero_()
+
+    def _forward_conv(self, x):
+        out = self.relu(self.bn1(self.conv1(x)))
+        out = self.relu(self.bn2(self.conv2(out)))
+        out = self.relu(self.bn3(self.conv3(out)))
+        out = F.adaptive_avg_pool2d(out, output_size=1)
+        return out        
+
+    def forward(self, x):
+        x = self._forward_conv(x)
+        outfea = self.flatten(x)
+        x = self.fc(outfea)
+        return outfea, x
+    
+if DBG:
+    def wrn(**kwargs):
+        model = SimpleCovNet(**kwargs)
+        return model
+else:
+    def wrn(**kwargs):
+        """
+        Constructs a Wide Residual Networks.
+        """
+        model = WideResNet(**kwargs)
+        return model
 
 #------------------------------Train and Test-----------------------------------
 
