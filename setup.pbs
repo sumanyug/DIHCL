@@ -1,0 +1,27 @@
+## PBS Script
+### name of Project
+#PBS -N errors 
+### Name of queue where the project is to be queued
+#PBS -q gpuq 
+### Commented out line below, ignore the smae
+##PBS -	q gpu_nodes
+### The following line selects 1 node with 2 CPUS each with accelerator. The PBS flag vntype=cray_compute is needed if you are asking for cores/processes less than 36. 
+#PBS -l select=1:ncpus=1:accelerator=True:vntype=cray_compute
+### All jobs on the same host hence pack. Else use place=scatter
+#PBS -l place=pack
+### Outputs from job
+#PBS -o sghoshal.log
+### Copy the environment
+#PBS -V
+
+### Load other models
+module load craype-broadwell
+module load craype-accel-nvidia60
+### Load virtualenv
+source activate dihcl
+
+### change directory
+cd /home/Infolab/sumanyu.ghoshal/DIHCL
+
+### About aprun command: https://bluewaters.ncsa.illinois.edu/using-aprun
+aprun -n 1 -N 1 -d 2 -a xt python dihcl_subset.py -d cifar10 -a wrn --epochs 300 --wd 1e-4.1 --use_curriculum --bandits_alg 'EXP3' --use_mean_teacher --gpu-id '0' --data_path ../data --save_path checkpoints/cifar10/AdaAug1 --trialID 'dihcl_exp_dloss_wrn2810/'

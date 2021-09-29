@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "test.py", line 4, in <module>
+    logging.basicConfig(level=logging.INFO, filename='example.log', encoding='utf-8')
+  File "/home/Infolab/sumanyu.ghoshal/.conda/envs/dihcl/lib/python3.8/logging/__init__.py", line 2009, in basicConfig
+    raise ValueError('Unrecognised argument(s): %s' % keys)
+ValueError: Unrecognised argument(s): encoding

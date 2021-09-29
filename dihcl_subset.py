@@ -1,3 +1,5 @@
+
+from __future__ import print_function
 DBG = False
 Fixed_Subset = True
 
@@ -6,7 +8,6 @@ Fixed_Subset = True
 # This source code is licensed under the license found in the
 # LICENSE file in the root directory of this source tree.
 
-from __future__ import print_function
 import argparse
 import os
 import sys
