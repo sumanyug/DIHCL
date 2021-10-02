@@ -193,7 +193,7 @@ parser.add_argument('--num_aug', default=0, type=int,
 parser.add_argument('--save_dynamics', action='store_true',
                     help='save training dynamics (require large memory)')
 
-args = parser.parse_args("")
+args = parser.parse_args()
 state = {k: v for k, v in args._get_kwargs()}
 
 # Use CUDA
